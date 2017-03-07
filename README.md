@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+## Prerequisites
+Tested with
+Node 6.9.4
+Npm 3.10.10
+
 ## Available Scripts
 
 In the project directory, you can run:
