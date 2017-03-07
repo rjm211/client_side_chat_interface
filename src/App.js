@@ -4,14 +4,24 @@ import { InputBox } from './views/InputBox';
 import './App.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      messages: []
+    }
+  }
+
   render() {
     return React.createElement('div', {} ,
       React.createElement(MessageList, {
-        messages: ['a', 'b']
+        messages: this.state.messages
       }),
       React.createElement(InputBox, {
-        onSubmit: value => {
-          debugger;
+        onSubmit: (value) => {
+          this.state.messages.push(value)
+          this.setState({
+            messages: this.state.messages
+          })
         }
       })
     )
