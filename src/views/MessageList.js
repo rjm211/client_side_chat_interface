@@ -10,3 +10,7 @@ export class MessageList extends Component {
     )
   }
 }
+
+MessageList.propTypes = {
+  messages: React.PropTypes.arrayOf(React.PropTypes.string)
+}
