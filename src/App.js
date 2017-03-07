@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { MessageList } from './views/MessageList';
 import { InputBox } from './views/InputBox';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css'
 
 class App extends Component {
   constructor(props) {
