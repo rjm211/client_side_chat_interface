@@ -13,7 +13,10 @@ class App extends Component {
   }
 
   render() {
-    return React.createElement('div', {} ,
+    return React.createElement(
+      'div', {
+        className: 'chat-client'
+      },
       React.createElement(MessageList, {
         messages: this.state.messages
       }),
@@ -23,7 +26,8 @@ class App extends Component {
           this.setState({
             messages: this.state.messages
           })
-        }
+        },
+        placeholder: 'Start typing to begin conversation'
       })
     )
   }

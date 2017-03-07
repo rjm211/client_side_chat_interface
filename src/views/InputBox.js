@@ -12,12 +12,14 @@ export class InputBox extends Component {
       },
       React.createElement(FormControl, {
         componentClass: 'input',
-        inputRef: ref => { this.ref = ref }
+        inputRef: ref => { this.ref = ref },
+        placeholder: this.props.placeholder
       })
     );
   }
 }
 
 InputBox.propTypes = {
-  onSubmit: React.PropTypes.func.isRequired
+  onSubmit: React.PropTypes.func.isRequired,
+  placeholder: React.PropTypes.string.isRequired
 }
