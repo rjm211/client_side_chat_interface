@@ -5,8 +5,8 @@ import { Form, FormControl } from 'react-bootstrap';
 export class InputBox extends Component {
   render() {
     return React.createElement(Form, {
-      onSubmit: e => {
-        this.props.onSubmit(this.ref.value);
+        onSubmit: e => {
+          this.props.onSubmit(this.ref.value);
           e.preventDefault();
           this.ref.value = '';
         }
