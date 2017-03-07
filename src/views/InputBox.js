@@ -8,6 +8,7 @@ export class InputBox extends Component {
       onSubmit: e => {
         this.props.onSubmit(this.ref.value);
           e.preventDefault();
+          this.ref.value = '';
         }
       },
       React.createElement(FormControl, {
